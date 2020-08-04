@@ -36,7 +36,7 @@
 			const SAVE_KEY_SCORE = "highscore";
 
 			const LASER_MAX = 10;
-			const LASER_SPEED = 500;
+			var LASER_SPEED = 500;
 			const LASER_DISTANCE = 0.6;
 			const LASER_EXPLODE_DUR = 0.1; //duration of the ship's explosion.
 
@@ -53,7 +53,7 @@
 			const ROID_POINTS_SMALL = 100; //points scored for a large asteroid.
 			const ROID_NUM = 3; // starting roids number.
 			var ROIDS_SIZE = 100;
-			const ROIDS_SPEED = 50;
+			var ROIDS_SPEED = 50;
 			const ROIDS_VERT = 10;
 
 			const SHOW_BOUNDING = false;
@@ -96,6 +96,9 @@
 				SHIP_SIZE = gameCanvas.width * 0.05;
 				ROIDS_SIZE = gameCanvas.width * 0.15;
 				TEXT_SIZE = gameCanvas.width * 0.06;
+				LASER_SPEED = gameCanvas.width * 0.7;
+				ROIDS_SPEED = gameCanvas.width * 0.07;
+				
 			}
 
 			function createAsteroidBelt() {
